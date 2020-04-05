@@ -1,9 +1,9 @@
 package com.challenge.service.interfaces;
 
-import com.challenge.entity.User;
-
 import java.util.List;
 import java.util.Optional;
+
+import com.challenge.entity.User;
 
 public interface UserServiceInterface extends ServiceInterface<User> {
 
