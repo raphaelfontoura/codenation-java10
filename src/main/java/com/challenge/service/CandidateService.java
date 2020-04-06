@@ -29,20 +29,17 @@ public class CandidateService implements CandidateServiceInterface {
 
 	@Override
 	public Optional<Candidate> findById(Long userId, Long companyId, Long accelerationId) {
-		// TODO Auto-generated method stub
-		return null;
+		return this.candidateRep.findByIdUserIdAndIdCompanyIdAndIdAccelerationId(userId, companyId, accelerationId);
 	}
 
 	@Override
 	public List<Candidate> findByCompanyId(Long companyId) {
-		// TODO Auto-generated method stub
-		return null;
+		return this.candidateRep.findByIdCompanyId(companyId);
 	}
 
 	@Override
 	public List<Candidate> findByAccelerationId(Long accelerationId) {
-		// TODO Auto-generated method stub
-		return null;
+		return this.candidateRep.findByIdAccelerationId(accelerationId);
 	}
 
 }

@@ -28,14 +28,12 @@ public class CompanyService implements CompanyServiceInterface {
 
 	@Override
 	public List<Company> findByAccelerationId(Long accelerationId) {
-		// TODO Auto-generated method stub
-		return null;
+		return this.companyRep.findDistinctByCandidatesIdAccelerationId(accelerationId);
 	}
 
 	@Override
 	public List<Company> findByUserId(Long userId) {
-		// TODO Auto-generated method stub
-		return null;
+		return this.companyRep.findByCandidatesIdUserId(userId);
 	}
 
 }

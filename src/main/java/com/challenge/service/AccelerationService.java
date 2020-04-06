@@ -28,8 +28,11 @@ public class AccelerationService implements AccelerationServiceInterface {
 
 	@Override
 	public List<Acceleration> findByCompanyId(Long companyId) {
-		// TODO Auto-generated method stub
-		return null;
+		return this.accelerationRep.findByCandidatesIdCompanyId(companyId);
+	}
+
+	public Acceleration findByName(String name) {
+		return this.accelerationRep.findByName(name);
 	}
 
 }

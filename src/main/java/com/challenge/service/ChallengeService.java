@@ -22,8 +22,7 @@ public class ChallengeService implements ChallengeServiceInterface {
 
 	@Override
 	public List<Challenge> findByAccelerationIdAndUserId(Long accelerationId, Long userId) {
-		// TODO Auto-generated method stub
-		return null;
+		return this.challengeRep.findByAccelerationsIdAndSubmissionsIdUserId(accelerationId, userId);
 	}
 
 }

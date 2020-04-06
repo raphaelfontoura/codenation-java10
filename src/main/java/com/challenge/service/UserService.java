@@ -27,15 +27,14 @@ public class UserService implements UserServiceInterface {
 	}
 
 	@Override
-	public List<User> findByAccelerationName(String name) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<User> findByAccelerationName(String name) { 
+				
+		return this.userRep.findByAccelerationName(name);
 	}
 
 	@Override
 	public List<User> findByCompanyId(Long companyId) {
-		// TODO Auto-generated method stub
-		return null;
+		return this.userRep.findByCandidatesIdCompanyId(companyId);
 	}
 
 }

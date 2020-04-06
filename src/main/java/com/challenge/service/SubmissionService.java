@@ -23,14 +23,12 @@ public class SubmissionService implements SubmissionServiceInterface {
 
 	@Override
 	public BigDecimal findHigherScoreByChallengeId(Long challengeId) {
-		// TODO Auto-generated method stub
-		return null;
+		return this.findHigherScoreByChallengeId(challengeId);
 	}
 
 	@Override
 	public List<Submission> findByChallengeIdAndAccelerationId(Long challengeId, Long accelerationId) {
-		// TODO Auto-generated method stub
-		return null;
+		return this.submissionRep.findByChallengeIdAndAccelerationId(challengeId, accelerationId);
 	}
 
 }
